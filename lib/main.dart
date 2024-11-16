@@ -1,5 +1,4 @@
 import 'package:emart_app/views/splash_screen/splash_screen.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'consts/consts.dart';
 
@@ -17,7 +16,11 @@ class MyApp extends StatelessWidget {
       title: appname,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
+        appBarTheme: const AppBarTheme(
+            //to set app bar icons color
+            iconTheme: IconThemeData(color: darkFontGrey),
+            elevation: 0.0,
+            backgroundColor: Colors.transparent),
         fontFamily: regular,
       ),
       home: const SplashScreen(),
